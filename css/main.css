@@ -1,0 +1,122 @@
+/* Configuraçoes iniciais */
+.concessao_serasa{
+	font-family:arial;
+	font-size:12px;
+	padding:0px;
+}
+
+.concessao_serasa [class*="col-"] {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background: transparent;
+    border: 0px;
+}
+.concessao_serasa .row{
+	margin: 0px;
+}
+.concessao_serasa .row .row {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.concessao_serasa .grid{
+	padding: 0px;
+}
+	.concessao_serasa .grid [class*="col-"]{
+		border: 1px solid white;
+	}
+
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;
+}
+.white{
+	color:white;
+}
+.grey{
+	color:#F0F0F0;
+}
+.blue{
+	color:blue;
+}
+.darkblue{
+	color:#0B0457;
+}
+.bg-darkblue{
+	background-color: #000969 !important;
+}
+.bg-blue{
+	background-color: #005AC2 !important;
+}
+.bg-lightblue{
+	background-color: #62A4F0 !important;
+}
+.bg-lightgrey{
+	background-color: #DEDEDE !important;
+}
+.bg-grey{
+	background-color: #BFBFBF !important;
+}
+.bg-darkgrey{
+	background-color: #A5A7A8 !important;
+}
+.font-logo{
+	font-size: 2em;
+}
+.font-bigger{
+	font-size: 1.4em;
+}
+.font-big{
+	font-size: 1.2em;
+}
+.font-over{
+	font-size: 1.1em;
+}
+.font-normal{
+	font-size: 1em;
+}
+.font-small{
+	font-size: 0.9em;
+}
+.font-grid{
+	font-size: 0.8em;
+}
+.bold{
+	font-weight: bold;
+}
+.line-big{
+	line-height: 1.6em;
+}
+.blank-space{
+	height: 1em;
+}
+.eq-center{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+.eq-left{
+	display:flex;
+	align-items:center;
+}
+.eq-right{
+	display:flex;
+	justify-content: flex-end;
+	align-items:center;
+}
+
+/* Configurações do formulário */
+	.concessao_serasa .relato{
+		height:1.1em;
+		text-shadow: 2px 2px grey;
+	}
+	.concessao_serasa .date-top{
+		font-size:0.8em;
+	}
+	.concessao_serasa .company{
+		margin-bottom: 5px;
+	}
+

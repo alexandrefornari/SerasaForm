@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://getbootstrap.com.vn/examples/equal-height-columns/equal-height-columns.css" />
+    <link rel="stylesheet" href="./css/main.css" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,183 +19,185 @@
     <![endif]-->
   </head>
   <body>
-    <div class="concessao_serasa container-fluid" style="font-family:arial; font-size:12px; padding:0px;">
+    <div class="concessao_serasa container-fluid">
     	<!-- Cabeçalho -->
     	<div class="row">
-    		<div class="col-md-2 col-sm-3 col-xs-6 logo">
+    		<div class="col-md-2 col-sm-3 col-xs-6 logo-left">
     			<img class="img-responsive" src="./logo.png">
     		</div>
-    		<div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-8 col-sm-offset-6" style="text-align:right;">
-    			<div class="relato" style="font-size:2em; font-weight:bold; color:#0B0457; height:1.1em;">Relato</div>
-    			<div id="date" style="font-size:0.8em; color: blue;">15/05/2016 10:51</div>
+    		<div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-8 col-sm-offset-6 right">
+    			<div class="relato darkblue font-logo bold">Relato</div>
+    			<div class="date date-top blue">15/05/2016 10:51</div>
     		</div>
     	</div>
     	<!-- Nome da empresa -->
     	<div class="row">
-    		<div class="col-md-12 company" style="text-align:center; margin-bottom:5px;">
+    		<div class="col-md-12 company center">
     			<span class="confidencial">Confidencial para:</span>
-    			<div style="display:inline; color:blue;" id="company_name">Nome da Empresa</div>
+    			<span class="blue" id="company_name">Nome da Empresa</span>
     		</div>
     	</div>
     	<div class="row">
-    		<div class="col-md-12" style="background-color:#000969; color:#F0F0F0; text-align:center;">
-    			<div style="font-size:1.2em;">RELATO</div>
-    			<div style="font-size:0.9em;">RELATÓRIO DE COMPORTAMENTO EM NEGÓCIO</div>
+    		<div class="col-md-12 bg-darkblue grey center">
+    			<div class="font-big">RELATO</div>
+    			<div class="font-small">RELATÓRIO DE COMPORTAMENTO EM NEGÓCIO</div>
     		</div>
     	</div>
     	<div class="row">
-    		<div class="col-md-12" style="height:1em;"></div>
+    		<div class="col-md-12 blank-space"></div>
     	</div>
     	<div class="row">
-    		<div class="col-md-12" style="background-color:#005AC2; color:#F0F0F0; text-align:center;">
-    			<div id="company_target" style="font-size:1.2em;">Empresa Exemplo S/A</div>
+    		<div class="col-md-12 bg-blue grey center font-big">
+    			<div id="company_target">Empresa Exemplo S/A</div>
     		</div>
     	</div>
-    	<div class="row">
-			<div class="col-md-4 col-sm-4 col-xs-4" id="target_cnpj" style="background-color:#62A4F0; color:black; font-weight:bold; font-size:0.8em; ">CNPJ: 00.000.000/000-00</div>
-			<div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right;background-color:#62A4F0; color:black; font-weight:bold; font-size:0.8em; ">VALORES EM REAIS</div>
-			<div class="col-md-4 col-sm-4 col-xs-4" style="text-align:right; background-color:#62A4F0; color:black; font-weight:bold; font-size:0.8em; ">01/09/2016 10:36:32</div>
+    	<div class="row bg-lightblue font-grid bold">
+			<div class="col-md-4 col-sm-4 col-xs-4" id="target_cnpj">CNPJ: 00.000.000/000-00</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">VALORES EM REAIS</div>
+			<div class="col-md-4 col-sm-4 col-xs-4">01/09/2016 10:36:32</div>
     	</div>
     	<div class="row">
-    		<div class="col-md-12" style="height:1em;"></div>
+    		<div class="col-md-12 blank-space"></div>
     	</div>
-    	<div class="row">
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="background-color:#005AC2; color:#F0F0F0;font-size:0.9em; line-height:1.6em; ">LIMITE DE CRÉDITO PJ</div>
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="background-color:#005AC2; color:#F0F0F0;font-size:0.9em; line-height:1.6em; text-align: right;">DATA: 01/02/2010 HORA:10:54:34</div>
+    	<div class="row bg-blue grey font-small line-big">
+    		<div class="col-md-6 col-sm-6 col-xs-6">LIMITE DE CRÉDITO PJ</div>
+    		<div class="col-md-6 col-sm-6 col-xs-6 right">DATA: 01/02/2010 HORA:10:54:34</div>
     	</div>
     	<div class="row row-eq-height">
-    		<div class="cold-md-3 col-sm-3 col-xs-3" style="color:#000969; background-color:#DEDEDE; display:flex; align-items:center; font-weight: bold;">Sugestão de limite</div>
-    		<div class="cold-md-3 col-sm-3 col-xs-3" style="color:white; background-color:#A5A7A8; display:flex; justify-content: center; align-items:center; font-size: 1.3em; font-weight: bold;">R$60.000,00</div>
-    		<div class="cold-md-6 col-sm-6 col-xs-6" style="background-color:#DEDEDE;">
+    		<div class="cold-md-3 col-sm-3 col-xs-3 bg-lightgrey darkblue eq-left bold">Sugestão de limite</div>
+    		<div class="cold-md-3 col-sm-3 col-xs-3 bg-darkgrey white eq-center bold font-bigger">R$60.000,00</div>
+    		<div class="cold-md-6 col-sm-6 col-xs-6 bg-lightgrey">
     			<div class="row" style="padding-top:2px;">
-    				<div class="col-md-12" style="text-align:center; background-color:#62A4F0; font-size:0.8em; font-weight:bold;">METODOLOGIA</div>
+    				<div class="col-md-12 bg-lightblue darkblue bold center font-grid">METODOLOGIA</div>
     			</div>
     			<div class="row">
-    				<div class="col-md-12" style="color:#000969;">Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas lorem. Pellentesque pretium</div>
+    				<div class="col-md-12 darkblue">Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas lorem. Pellentesque pretium</div>
     			</div>
     		</div>
     	</div>
     	<div class="row">
-    		<div class="col-md-12" style="height:1em;"></div>
+    		<div class="col-md-12 blank-space"></div>
     	</div>
-    	<div class="row">
-			<div class="col-md-6 col-sm-6 col-xs-6" style="background-color:#005AC2; color:#F0F0F0; font-size:0.9em; line-height:1.6em;">FATURAMENTO PRESUMIDO</div>
-			<div class="col-md-6 col-sm-6 col-xs-6" style="background-color:#005AC2; color:#F0F0F0; font-size:0.9em; line-height:1.6em; text-align: right;">DATA: 01/02/2010 HORA:10:54:34</div>
+    	<div class="row bg-blue grey font-small line-big">
+			<div class="col-md-6 col-sm-6 col-xs-6">FATURAMENTO PRESUMIDO</div>
+			<div class="col-md-6 col-sm-6 col-xs-6 right">DATA: 01/02/2010 HORA:10:54:34</div>
     	</div>
     	<div class="row row-eq-height">
-    		<div class="cold-md-3 col-sm-3 col-xs-3" style="color:#000969; background-color:#DEDEDE; display:flex; align-items:center; font-weight: bold;">FATURAMENTO PRESUMIDO ANUAL</div>
-    		<div class="cold-md-3 col-sm-3 col-xs-3" style="color:white; background-color:#A5A7A8; display:flex; justify-content: center; align-items:center; font-size: 1.3em; font-weight: bold;">ACIMA DE R$500.000,00</div>
-    		<div class="cold-md-6 col-sm-6 col-xs-6" style="background-color:#DEDEDE;">
+    		<div class="cold-md-3 col-sm-3 col-xs-3 bg-lightgrey darkblue eq-left bold">FATURAMENTO PRESUMIDO ANUAL</div>
+    		<div class="cold-md-3 col-sm-3 col-xs-3 bg-darkgrey white eq-center bold font-bigger">ACIMA DE R$500.000,00</div>
+    		<div class="cold-md-6 col-sm-6 col-xs-6 bg-lightgrey">
     			<div class="row" style="padding-top:2px;">
-    				<div class="col-md-12" style="text-align:center; background-color:#62A4F0; font-size:0.8em; font-weight:bold;">INTERPRETAÇÃO</div>
+    				<div class="col-md-12 bg-lightblue darkblue bold center font-grid">INTERPRETAÇÃO</div>
     			</div>
     			<div class="row">
-    				<div class="col-md-12" style="color:#000969;">Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas lorem. Pellentesque pretium</div>
+    				<div class="col-md-12 darkblue">Etiam posuere quam ac quam. Maecenas aliquet accumsan leo. Nullam dapibus fermentum ipsum. Etiam quis quam. Integer lacinia. Nulla est. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Integer vulputate sem a nibh rutrum consequat. Maecenas lorem. Pellentesque pretium</div>
     			</div>
     		</div>
     	</div>
     	<div class="row">
+    		<div class="col-md-12 blank-space"></div>
+    	</div>
+    	<div class="row bg-blue grey line-big center">
+    		<div class="col-md-12">IDENTIFICAÇÃO/LOCALIZAÇÃO (ATUALIZADO EM 24/08/2010)</div>
+    	</div>
+        <div class="container-fluid grid font-grid darkblue">
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">CNPJ: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">00.000.000/0000-00</div>
+        		<div class="col-md-8 col-sm-8 col-xs-8 right bold">SITUAÇÃO DO CNPJ EM 31/02/2016: ATIVA</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Razão Social: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Empresa Exemplo</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Nome Fantasia: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Empresa Exemplo</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Tipo de Sociedade: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Sociedade anônima fechada</div>
+        	</div>
+        	<div class="row row-eq-height bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 eq-right">Antecessora: </div>
+        		<div class="col-md-8 col-sm-8 col-xs-8 bold" style="border-right: none">
+        			EMPRESA EXEMPLO S/A<BR/>
+        			EMPRESA EXEMPLO S/A
+        		</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold" style="border-left: none;">
+        			Até 02/01/2005<br/>
+        			Até 05/03/2008
+        		</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Registro: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">000.000</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Data do Registro: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">03/01/2004</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">NIRE: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">00.000.000.000</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Endereço: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Endereço exemplo</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Bairro: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Bairro exemplo</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Cidade: </div>
+        		<div class="col-md-6 col-sm-6 col-xs-6 bold">Cidade exemplo</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">CEP: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">00000-000</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Telefone: </div>
+        		<div class="col-md-6 col-sm-6 col-xs-6 bold">(11)3232-3232</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">FAX: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">(11)2222-2222</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Home page: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">http://www.homepageexemplo.com.br</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Fundação: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">26/01/2000</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Filiais: </div>
+        		<div class="col-md-6 col-sm-6 col-xs-6 bold">BELO HORIZONTE, BELEM, FORTALEZA</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Qtde filiais: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">3</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Ramo: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Serviços de informação</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Cód. Atividade Serasa: </div>
+        		<div class="col-md-6 col-sm-6 col-xs-6 bold">5-00.00.00</div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Qtde empregados: </div>
+        		<div class="col-md-2 col-sm-2 col-xs-2 bold">732</div>
+        	</div>
+        	<div class="row bg-grey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">CNAE: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">00.000-00</div>
+        	</div>
+        	<div class="row bg-lightgrey">
+        		<div class="col-md-2 col-sm-2 col-xs-2 right">Principais Produtos: </div>
+        		<div class="col-md-10 col-sm-10 col-xs-10 bold">Soluções paragestão</div>
+        	</div>
+        </div>
+    	<div class="row">
     		<div class="col-md-12" style="height:1em;"></div>
     	</div>
-    	<div class="row">
-    		<div class="col-md-12" style="background-color:#005AC2; color:#F0F0F0; text-align:center;">IDENTIFICAÇÃO/LOCALIZAÇÃO (ATUALIZADO EM 24/08/2010)</div>
+    	<div class="row bg-blue grey line-big center">
+    		<div class="col-md-12">OBSERVAÇÕES (ATUALIZADO EM 24/08/2010)</div>
     	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">CNPJ: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">00.000.000/0000-00</div>
-    		<div class="col-md-8 col-sm-8 col-xs-8" style="text-align: right; border:1px solid white">SITUAÇÃO DO CNPJ EM 31/02/2016: ATIVA</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Razão Social: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Empresa Exemplo</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Nome Fantasia: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Empresa Exemplo</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Tipo de Sociedade: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Sociedade anônima fechada</div>
-    	</div>
-    	<div class="row row-eq-height" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white; display:flex; align-items:center;justify-content: flex-end;">Antecessora: </div>
-    		<div class="col-md-8 col-sm-8 col-xs-8" style="border:1px solid white; border-right: none;">
-    			EMPRESA EXEMPLO S/A<BR/>
-    			EMPRESA EXEMPLO S/A
-    		</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white; border-left:none;">
-    			Até 02/01/2005<br/>
-    			Até 05/03/2008
-    		</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Registro: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">000.000</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Data do Registro: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">03/01/2004</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">NIRE: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">00.000.000.000</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Endereço: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Endereço exemplo</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Bairro: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Bairro exemplo</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Cidade: </div>
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="border:1px solid white">Cidade exemplo</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">CEP: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">00000-000</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Telefone: </div>
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="border:1px solid white">(11)3232-3232</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">FAX: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">(11)2222-2222</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Home page: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">http://www.homepageexemplo.com.br</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Fundação: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">26/01/2000</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Filiais: </div>
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="border:1px solid white">BELO HORIZONTE, BELEM, FORTALEZA</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Qtde filiais: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">3</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Ramo: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Serviços de informação</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Cód. Atividade Serasa: </div>
-    		<div class="col-md-6 col-sm-6 col-xs-6" style="border:1px solid white">5-00.00.00</div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Qtde empregados: </div>
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="border:1px solid white">732</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#BFBFBF;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">CNAE: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">00.000-00</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-2 col-sm-2 col-xs-2" style="font-weight: normal; text-align: right; border:1px solid white;">Principais Produtos: </div>
-    		<div class="col-md-10 col-sm-10 col-xs-10" style="border:1px solid white">Soluções paragestão</div>
-    	</div>
-    	<div class="row">
-    		<div class="col-md-12" style="height:1em;"></div>
-    	</div>
-    	<div class="row">
-    		<div class="col-md-12" style="background-color:#005AC2; color:#F0F0F0; text-align:center;">OBSERVAÇÕES (ATUALIZADO EM 24/08/2010)</div>
-    	</div>
-    	<div class="row" style="color:#000969; font-size:0.8em; font-weight:bold; background-color:#DEDEDE;">
-    		<div class="col-md-12 col-sm-12 col-xs-12" style="font-weight: normal; border:1px solid white;">
+    	<div class="row bg-lightgrey darkblue font-small">
+    		<div class="col-md-12 col-sm-12 col-xs-12">
     			A empresa incorporou em 12/2007 a Experian Brasil Aquisições LTDA - CNPJ00.000.000/0000-4.
     		</div>
     	</div>
@@ -206,21 +209,3 @@
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-<style type="text/css">
-	.concessao_serasa [class*="col-"] {
-	    padding-top: 0px;
-	    padding-bottom: 0px;
-	    padding-left: 2px;
-	    padding-right: 2px;
-	    background-color: transparent;
-	    border: 0px;
-	}
-	.concessao_serasa .row{
-		margin: 0px;
-	}
-	.concessao_serasa .row .row {
-	    margin-top: 0px;
-	    margin-bottom: 0;
-	}
-</style>
