@@ -26,7 +26,9 @@
 	.concessao_serasa .grid [class*="col-"]{
 		border: 1px solid white;
 	}
-
+.row-eq-height{
+	display: flex;
+}
 .center{
 	text-align: center;
 }
