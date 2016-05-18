@@ -26,85 +26,86 @@
 	.concessao_serasa .grid [class*="col-"]{
 		border: 1px solid white;
 	}
-.row-eq-height{
+.concessao_serasa .row-eq-height{
 	display: flex;
 }
-.center{
+.concessao_serasa .center{
 	text-align: center;
 }
-.right{
+.concessao_serasa .right{
 	text-align: right;
 }
-.white{
+.concessao_serasa .white{
 	color:white;
 }
-.grey{
+.concessao_serasa .grey{
 	color:#F0F0F0;
 }
-.blue{
+.concessao_serasa .blue{
 	color:blue;
 }
-.darkblue{
+.concessao_serasa .darkblue{
 	color:#0B0457;
 }
-.bg-darkblue{
+.concessao_serasa .bg-darkblue{
 	background-color: #000969 !important;
 }
-.bg-blue{
+.concessao_serasa .bg-blue{
 	background-color: #005AC2 !important;
 }
-.bg-lightblue{
+.concessao_serasa .bg-lightblue{
 	background-color: #62A4F0 !important;
 }
-.bg-lightgrey{
+.concessao_serasa .bg-lightgrey{
 	background-color: #DEDEDE !important;
 }
-.bg-grey{
+.concessao_serasa .bg-grey{
 	background-color: #BFBFBF !important;
 }
-.bg-darkgrey{
+.concessao_serasa .bg-darkgrey{
 	background-color: #A5A7A8 !important;
 }
-.font-logo{
+.concessao_serasa .font-logo{
 	font-size: 2em;
 }
-.font-bigger{
-	font-size: 1.4em;
+.concessao_serasa .font-bigger{
+	font-size: 1.3em;
 }
-.font-big{
+.concessao_serasa .font-big{
 	font-size: 1.2em;
 }
-.font-over{
+.concessao_serasa .font-over{
 	font-size: 1.1em;
 }
-.font-normal{
+.concessao_serasa .font-normal{
 	font-size: 1em;
 }
-.font-small{
+.concessao_serasa .font-small{
 	font-size: 0.9em;
 }
-.font-grid{
+.concessao_serasa .font-grid{
 	font-size: 0.8em;
 }
-.bold{
+.concessao_serasa .bold{
 	font-weight: bold;
 }
-.line-big{
+.concessao_serasa .line-big{
 	line-height: 1.6em;
 }
-.blank-space{
+.concessao_serasa .blank-space{
 	height: 1em;
 }
-.eq-center{
+.concessao_serasa .eq-center{
 	display:flex;
 	justify-content: center;
 	align-items:center;
+	text-align: center;
 }
-.eq-left{
+.concessao_serasa .eq-left{
 	display:flex;
 	align-items:center;
 }
-.eq-right{
+.concessao_serasa .eq-right{
 	display:flex;
 	justify-content: flex-end;
 	align-items:center;
